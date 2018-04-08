@@ -23,7 +23,7 @@ class QueryExtractor {
 
     public String extract(String url, String paramName) {
 
-        Pattern pattern = Pattern.compile(paramName + "=(.[^\\&]+)");
+        Pattern pattern = Pattern.compile(paramName + "=([^&]+)");
         Matcher matcher = pattern.matcher(url);
 
         if (matcher.find()) {
