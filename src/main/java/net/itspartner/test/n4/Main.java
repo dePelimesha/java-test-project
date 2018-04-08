@@ -20,11 +20,4 @@ public class Main implements BiggestNumberFinder {
 
         return maxValue;
     }
-
-    public static void main(String[] args) {
-        Main compare = new Main();
-
-        int[] numbers = {1, 2, 3, 8, 4};
-        System.out.println("Max element = " + compare.findTheBiggestNumber(numbers));
-    }
 }
