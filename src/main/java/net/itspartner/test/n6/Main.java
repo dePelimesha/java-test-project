@@ -29,7 +29,7 @@ public class Main {
     private static final String SOURCE_FILE_PATH = "src/main/resources/n6/source";
     private static final String RESULT_FILE_PATH = "src/main/resources/n6/result";
     private static final Pattern PASSWORD_PATTERN =
-            Pattern.compile("(?=^[a-z0-9@#\\-]*[A-Z][a-z0-9@#\\-]*$).{8,}");
+            Pattern.compile("(?=^[a-z0-9@#\\-]*[A-Z][a-z0-9@#\\-]*$)(?=.*[@#\\-]).{8,}");
 
     public static List<String> findSuitableUsers(List<String> usersList) {
         List<String> suitableUsersList = new ArrayList<>();
